@@ -21,10 +21,16 @@ I always try to keep myself updated with the latest trends in the web world. Som
 
 <hr/>
 
-| [![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=macshion&theme=tokyonight)](https://github.com/anuraghazra/github-readme-stats) | [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=macshion&layout=compact&hide=CSS,html,Stylus&theme=tokyonight)](https://github.com/anuraghazra/github-readme-stats) |
-| ------------- | ------------- |
+[![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=macshion&theme=tokyonight)](https://github.com/anuraghazra/github-readme-stats)
+
+<!--
+
+ [![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=macshion&theme=tokyonight)](https://github.com/anuraghazra/github-readme-stats) 
 
 
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=macshion&layout=compact&hide=CSS,html,Stylus,EJS&theme=tokyonight)](https://github.com/anuraghazra/github-readme-stats)
+
+-->
 
 
 <!--
