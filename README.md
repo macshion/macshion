@@ -12,7 +12,7 @@ I am passionate about coding/programming. ❤️
 
 I always try to keep myself updated with the latest trends in the web world. Sometimes I write technical things ✍️ at my [blog](http://blog.macshion.com/).
 
-## My Gihub Stats
+<hr/>
 
 [![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=macshion&theme=tokyonight)](https://github.com/anuraghazra/github-readme-stats)
 
