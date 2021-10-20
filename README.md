@@ -2,6 +2,13 @@
 I am passionate about coding/programming. ❤️
 
 ## My Tech Stack: 
+
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png"></code>    
+
 ❖ HTML(5), CSS(3),  JavaScript,**Typescript**, **Vue**, **React**🔥, Sass, Less, Bootstrap,jQuery...
 ❖ Frontend Developer with **6+** years of professional experiences in Web Designing and User Interface Development. 
 ❖ Strong experience with Cross Browser Compatibility issues and Optimization for web, including CSS Sprites and best practices
@@ -14,7 +21,10 @@ I always try to keep myself updated with the latest trends in the web world. Som
 
 <hr/>
 
-[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=macshion&theme=tokyonight)](https://github.com/anuraghazra/github-readme-stats)
+| [![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=macshion&theme=tokyonight)](https://github.com/anuraghazra/github-readme-stats) | [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=macshion&layout=compact&hide=CSS,html,Stylus&theme=tokyonight)](https://github.com/anuraghazra/github-readme-stats) |
+| ------------- | ------------- |
+
+
 
 
 <!--
