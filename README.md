@@ -1,4 +1,5 @@
-### Hi there 👋 I'm a Front-End Engineer based in **Beijing China** 😊 . I am passionate about coding/programming. ❤️
+### Hi there 👋 I'm a Front-End Engineer based in **Beijing China** 😊 
+I am passionate about coding/programming. ❤️
 
 ❖ Tech stack: HTML(5), CSS(3),  JavaScript,**Typescript**, **Vue**, **React**🔥, Sass, Less, Bootstrap,jQuery...
 ❖ Frontend Developer with **6+** years of professional experiences in Web Designing and User Interface Development. 
