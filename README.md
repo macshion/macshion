@@ -10,10 +10,15 @@ I am passionate about coding/programming. ❤️
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png"></code>    
 
 ❖ HTML(5), CSS(3),  JavaScript,**Typescript**, **Vue**, **React**🔥, Sass, Less, Bootstrap,jQuery...
+
 ❖ Frontend Developer with **6+** years of professional experiences in Web Designing and User Interface Development. 
+
 ❖ Strong experience with Cross Browser Compatibility issues and Optimization for web, including CSS Sprites and best practices
+
 ❖ Experts in responsive Web Design and analysing and fixing UI bugs quickly. 
+
 ❖ Proficiency in code optimization to improving the performance..
+
 
 ☀️ I'm focused on building products with JavaScript/Typescript, specifically React.
 
