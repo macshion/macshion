@@ -1,4 +1,4 @@
-### Hi there 👋 I'm a Front-End Engineer based in **Beijing China** 😊 
+### Hi there 👋 I'm a Front-End Engineer😊 
 I am passionate about coding/programming. ❤️
 
 ## My Tech Stack: 
