@@ -11,7 +11,7 @@ I am passionate about coding/programming. ❤️
 
 ❖ HTML(5), CSS(3),  JavaScript,**Typescript**, **Vue**, **React**🔥, Sass, Less, Bootstrap,jQuery...
 
-❖ Frontend Developer with **6+** years of professional experiences in Web Designing and User Interface Development. 
+❖ Frontend Developer with **８+** years of professional experiences in Web Designing and User Interface Development. 
 
 ❖ Strong experience with Cross Browser Compatibility issues and Optimization for web, including CSS Sprites and best practices
 
