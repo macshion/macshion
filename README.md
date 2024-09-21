@@ -22,7 +22,7 @@ I am passionate about coding/programming. ❤️
 
 ☀️ I'm focused on building products with JavaScript/Typescript, specifically React.
 
-I always try to keep myself updated with the latest trends in the web world. Sometimes I write technical things ✍️ at my [blog](http://blog.macshion.com/).
+I always try to keep myself updated with the latest trends in the web world. Sometimes I write technical things ✍️
 
 <hr/>
 
