@@ -1,35 +1,17 @@
 ---
+id: intro
+title: 概述
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+これはMacshionの技術ブログです。エンジニア向けの「図書館」のようなものです。学習したことをメモしていきます。
 
-Let's discover **Docusaurus in less than 5 minutes**.
+カテゴリーは以下の通りです。
 
-## Getting Started
+- [フロントエンド](/docs/frontend/)
+- バックエンド
+- データーベース
+- テスト
+- [インフラ関連](/docs/devops/)
 
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**:
-
-```shell
-npx @docusaurus/init@latest init my-website classic
-```
-
-## Start your site
-
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and display your changes.
+最近の投稿は[こちら](/blog)からご覧いただけます。

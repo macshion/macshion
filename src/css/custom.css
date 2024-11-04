@@ -26,3 +26,30 @@
 html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+div.markdown{
+    font-size: 1.1em;
+}
+
+p a{
+    text-decoration: underline;
+}
+
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  line-height: 2.5em;
+}
+
+ruby {
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+  font-weight: bold;
+  color: #25c2a0;
+}
+
+ruby rt {
+    font-weight: normal;
+  font-size: 0.6em;
+  color: #888;
+}
