@@ -60,13 +60,23 @@ ruby {
   padding-left: 0.8em;
   padding-right: 0.8em;
   font-weight: bold;
-  color: #25c2a0;
+  color: var(--ifm-color-primary);
 }
 
 ruby rt {
-    font-weight: normal;
+  font-weight: normal;
   font-size: 0.6em;
-  color: #888;
+  color: var(--ifm-color-secondary);
+  opacity: 0.8;
+}
+
+ruby:hover {
+  text-shadow: 0 0 8px var(--ifm-color-primary-lighter);
+}
+
+ruby:hover rt {
+  color: var(--ifm-color-primary-lighter);
+  transition: all 0.3s ease;
 }
 
 /* 添加毛玻璃效果的导航栏 */
