@@ -365,3 +365,279 @@
         transform: translateY(0);
     }
 }
+
+/* 修改博客部分的样式 */
+.latestBlogSection {
+    padding: 8rem 0;
+    background: linear-gradient(135deg, 
+        #1a1a1a 0%,
+        #2a1f3d 50%,  /* 添加紫色调 */
+        #1a2a3d 100%  /* 添加蓝色调 */
+    );
+    position: relative;
+    overflow: hidden;
+}
+
+/* 修改标题部分的样式 */
+.sectionHeader {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.sectionTitle {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(120deg, #00ccff, #a64dff); /* 修改渐变色 */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    position: relative;
+}
+
+.titleUnderline {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, 
+        transparent 0%,
+        #00ccff 30%,
+        #a64dff 70%,  /* 添加紫色 */
+        transparent 100%
+    );
+}
+
+/* 修改博客卡片网格布局 */
+.blogGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* 修改博客卡片样式 */
+.blogCard {
+    padding: 2.5rem;
+    border-radius: 16px;
+    background: linear-gradient(135deg,
+        rgba(26, 26, 26, 0.8) 0%,
+        rgba(42, 31, 61, 0.8) 100%  /* 添加紫色背景 */
+    );
+    border: 1px solid rgba(166, 77, 255, 0.2);  /* 紫色边框 */
+    backdrop-filter: blur(10px);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* 修改卡片悬停效果 */
+.blogCard:hover {
+    transform: translateY(-8px);
+    border-color: #a64dff;  /* 紫色边框 */
+    box-shadow: 
+        0 10px 30px rgba(166, 77, 255, 0.1),
+        0 0 60px rgba(0, 204, 255, 0.05);
+    background: linear-gradient(135deg,
+        rgba(26, 26, 26, 0.9) 0%,
+        rgba(42, 31, 61, 0.9) 100%
+    );
+}
+
+/* 添加卡片光效 */
+.blogCard::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(
+        45deg,
+        transparent 0%,
+        rgba(0, 204, 255, 0.05) 50%,
+        transparent 100%
+    );
+    transform: translateX(-100%);
+    transition: transform 0.8s ease;
+}
+
+.blogCard:hover::after {
+    transform: translateX(100%);
+}
+
+/* 修改标题样式 */
+.blogTitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--ifm-color-primary);
+    line-height: 1.4;
+    transition: color 0.3s ease;
+}
+
+.blogCard:hover .blogTitle {
+    background: linear-gradient(120deg, #00ccff, #0099ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.blogExcerpt {
+    font-size: 1.1rem;
+    color: var(--ifm-color-secondary);
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    flex-grow: 1;
+}
+
+.blogMeta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.95rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(0, 204, 255, 0.1);
+}
+
+.blogDate {
+    color: var(--ifm-color-secondary);
+    display: flex;
+    align-items: center;
+}
+
+.blogDate::before {
+    content: '📅';
+    margin-right: 0.5rem;
+}
+
+.blogTags {
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    background: rgba(166, 77, 255, 0.1);  /* 紫色背景 */
+    color: #a64dff;  /* 紫色文字 */
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.blogTags::before {
+    content: '🏷️';
+    margin-right: 0.5rem;
+}
+
+.blogCard:hover .blogTags {
+    background: rgba(166, 77, 255, 0.2);
+}
+
+/* 添加背景动画效果 */
+.latestBlogSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg,
+        transparent 0%,
+        #00ccff 25%,
+        #a64dff 50%,
+        #00ccff 75%,
+        transparent 100%
+    );
+    animation: gradientFlow 4s linear infinite;
+}
+
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* 白天模式样式 */
+[data-theme='light'] .latestBlogSection {
+    background: linear-gradient(135deg, 
+        #f5f5f5 0%,
+        #f0e6ff 50%,  /* 浅紫色 */
+        #e6f3ff 100%  /* 浅蓝色 */
+    );
+}
+
+[data-theme='light'] .blogCard {
+    background: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(240, 230, 255, 0.9) 100%
+    );
+    border: 1px solid rgba(166, 77, 255, 0.3);
+}
+
+/* 修改白天模式下的文字颜色 */
+[data-theme='light'] .blogTitle {
+    color: #2a1f3d;  /* 深紫色 */
+}
+
+[data-theme='light'] .blogExcerpt {
+    color: #4a5568;  /* 深灰色 */
+}
+
+[data-theme='light'] .blogDate {
+    color: #718096;  /* 中灰色 */
+}
+
+[data-theme='light'] .blogTags {
+    background: rgba(166, 77, 255, 0.1);
+    color: #6b46c1;  /* 紫色 */
+}
+
+[data-theme='light'] .blogCard:hover {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 
+        0 8px 30px rgba(166, 77, 255, 0.15),
+        0 0 60px rgba(0, 153, 255, 0.1);
+}
+
+[data-theme='light'] .blogCard:hover .blogTitle {
+    background: linear-gradient(120deg, #6b46c1, #4299e1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+[data-theme='light'] .blogCard:hover .blogTags {
+    background: rgba(166, 77, 255, 0.2);
+    color: #553c9a;  /* 深紫色 */
+}
+
+/* 修改白天模式下的分隔线颜色 */
+[data-theme='light'] .blogMeta {
+    border-top: 1px solid rgba(166, 77, 255, 0.2);
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 996px) {
+    .latestBlogSection {
+        padding: 4rem 0;
+    }
+    
+    .blogGrid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .blogCard {
+        padding: 2rem;
+    }
+    
+    .blogTitle {
+        font-size: 1.5rem;
+    }
+}

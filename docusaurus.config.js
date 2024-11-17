@@ -31,12 +31,21 @@ const darkCodeTheme = require( 'prism-react-renderer/themes/dracula' );
                     showLastUpdateTime: true,
                 },
                 blog: {
+                    path: 'blog',
+                    routeBasePath: 'blog',
                     showReadingTime: true,
-                    // Please change this to your repo.
-                    // editUrl:
-                    //     'https://github.com/facebook/docusaurus/edit/main/website/blog/',
-                    blogSidebarTitle: 'All posts',
+                    blogTitle: 'Blog',
+                    blogDescription: 'A Front-End Engineer\'s Blog',
+                    postsPerPage: 5,
                     blogSidebarCount: 'ALL',
+                    blogSidebarTitle: 'All Posts',
+                    feedOptions: {
+                        type: [ 'rss', 'json' ],
+                        title: 'Macshion\'s Blog',
+                        description: 'A Front-End Engineer\'s Blog',
+                        copyright: `Copyright © ${ new Date().getFullYear() } Macshion's Blog`,
+                        language: 'ja',
+                    },
                 },
                 theme: {
                     customCss: require.resolve( './src/css/custom.css' ),

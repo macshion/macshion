@@ -3,6 +3,8 @@ import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import { useAllDocsData } from '@docusaurus/plugin-content-docs/client';
+import { useBlogPost } from '@docusaurus/theme-common';
 import styles from './index.module.css';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
@@ -115,6 +117,89 @@ function HomepageHeader () {
     );
 }
 
+// 修改博客文章组件
+function LatestBlogPosts () {
+    const { siteConfig } = useDocusaurusContext();
+    const [ posts, setPosts ] = React.useState( [] );
+
+    React.useEffect( () => {
+        // 获取 RSS feed
+        async function fetchRSSFeed () {
+            try {
+                // 获取 RSS feed
+                const response = await fetch( '/blog/rss.xml' );
+                const xmlText = await response.text();
+
+                // 解析 XML
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString( xmlText, 'text/xml' );
+                const items = xmlDoc.querySelectorAll( 'item' );
+
+                // 转换为文章数组
+                const blogPosts = Array.from( items ).slice( 0, 5 ).map( item => ( {
+                    title: item.querySelector( 'title' ).textContent,
+                    link: item.querySelector( 'link' ).textContent,
+                    description: item.querySelector( 'description' ).textContent,
+                    date: new Date( item.querySelector( 'pubDate' ).textContent ),
+                    author: item.querySelector( 'author' )?.textContent || 'Macshion',
+                    categories: Array.from( item.querySelectorAll( 'category' ) ).map( cat => cat.textContent )
+                } ) );
+
+                console.log( 'Parsed blog posts:', blogPosts );
+                setPosts( blogPosts );
+            } catch ( error ) {
+                console.error( 'Error fetching RSS feed:', error );
+            }
+        }
+
+        fetchRSSFeed();
+    }, [] );
+
+    if ( posts.length === 0 ) {
+        return null;
+    }
+
+    return (
+        <section className={ styles.latestBlogSection }>
+            <div className="container">
+                <div className={ styles.sectionHeader }>
+                    <h2 className={ styles.sectionTitle }>
+                        Latest Posts
+                        <div className={ styles.titleUnderline }></div>
+                    </h2>
+                </div>
+                <div className={ styles.blogGrid }>
+                    { posts.map( ( post, idx ) => (
+                        <Link
+                            key={ idx }
+                            to={ post.link }
+                            className={ styles.blogCard }
+                            style={ { '--delay': `${ idx * 0.1 }s` } }
+                        >
+                            <h3 className={ styles.blogTitle }>
+                                { post.title }
+                            </h3>
+                            <p className={ styles.blogExcerpt }>
+                                { post.description.replace( /<[^>]*>/g, '' ).slice( 0, 150 ) }...
+                            </p>
+                            <div className={ styles.blogMeta }>
+                                <span className={ styles.blogDate }>
+                                    { post.date.toLocaleDateString( 'ja-JP' ) }
+                                </span>
+                                { post.categories?.length > 0 && (
+                                    <span className={ styles.blogTags }>
+                                        { post.categories[ 0 ] }
+                                    </span>
+                                ) }
+                            </div>
+                        </Link>
+                    ) ) }
+                </div>
+            </div>
+        </section>
+    );
+}
+
 export default function Home () {
     const { siteConfig } = useDocusaurusContext();
 
@@ -125,6 +210,7 @@ export default function Home () {
             <HomepageHeader />
             <main>
                 <HomepageFeatures />
+                <LatestBlogPosts />
             </main>
         </Layout>
     );
