@@ -108,3 +108,264 @@
     height: 40px;
   }
 }
+
+/* 通用部分样式 */
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 5rem;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.sectionTitle, .techStackTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(120deg, #00ccff, #0099ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: inline-block;
+}
+
+.titleUnderline {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #00ccff, #0099ff);
+  border-radius: 2px;
+}
+
+.sectionDescription {
+  font-size: 1.2rem;
+  color: var(--ifm-color-secondary);
+  margin-top: 2rem;
+}
+
+/* 技术栈部分 */
+.techStackSection {
+  padding: 8rem 0;
+  background: linear-gradient(45deg, rgba(0,0,0,0.8) 0%, rgba(0,153,255,0.1) 100%);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.techStackVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.techStackGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.techItem {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s ease-out forwards;
+  animation-delay: var(--delay);
+}
+
+.techIconWrapper {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.techIcon {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.techIconGlow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.3s ease;
+  filter: blur(20px);
+  z-index: 1;
+}
+
+.techItem:hover .techIcon {
+  transform: translateY(-5px) scale(1.1);
+}
+
+.techItem:hover .techIconGlow {
+  opacity: 0.5;
+  width: 60px;
+  height: 60px;
+}
+
+/* 特性部分 */
+.featuresSection {
+  padding: 8rem 0;
+  background: linear-gradient(180deg, rgba(26,26,26,0) 0%, rgba(0,204,255,0.1) 100%);
+}
+
+.featureCard {
+  height: 100%;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 204, 255, 0.2);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  margin: 1rem;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.featureVisible .featureCard {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: var(--delay);
+}
+
+.featureIconWrapper {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 2rem;
+}
+
+.featureIcon {
+  font-size: 3rem;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featureIconRing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  border: 2px solid var(--ifm-color-primary);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+/* 动画 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.5;
+  }
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 996px) {
+  .sectionTitle, .techStackTitle {
+    font-size: 2.5rem;
+  }
+  
+  .techStackGrid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 2rem;
+  }
+  
+  .sectionHeader {
+    margin-bottom: 3rem;
+  }
+  
+  .featuresSection, .techStackSection {
+    padding: 4rem 0;
+  }
+}
+
+/* 添加白天模式的样式 */
+[data-theme='light'] .techStackSection,
+[data-theme='light'] .featuresSection {
+  background: linear-gradient(180deg, 
+    var(--ifm-background-color) 0%, 
+    rgba(0,153,255,0.1) 100%
+  );
+}
+
+[data-theme='light'] .featureCard {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 153, 255, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='light'] .featureCard h3 {
+  color: var(--text-color);
+}
+
+[data-theme='light'] .featureCard p {
+  color: var(--secondary-text);
+}
+
+[data-theme='light'] .sectionDescription {
+  color: var(--secondary-text);
+}
+
+[data-theme='light'] .techName {
+  color: var(--text-color);
+}
+
+/* 修改技术栈图标在白天模式下的发光效果 */
+[data-theme='light'] .techIconGlow {
+  opacity: 0.3;
+  filter: blur(15px);
+}
+
+[data-theme='light'] .techItem:hover .techIconGlow {
+  opacity: 0.4;
+}
+
+/* 修改特性卡片在白天模式下的悬停效果 */
+[data-theme='light'] .featureCard:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 153, 255, 0.15);
+}
+
+/* 修改标题下划线在白天模式下的样式 */
+[data-theme='light'] .titleUnderline {
+  background: linear-gradient(90deg, #2563eb, #0099ff);
+}

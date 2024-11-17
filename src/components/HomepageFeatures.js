@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
 
@@ -57,20 +57,56 @@ const FeatureList = [
 ];
 
 function TechStack () {
+    const sectionRef = useRef( null );
+
+    useEffect( () => {
+        const observer = new IntersectionObserver(
+            ( entries ) => {
+                entries.forEach( entry => {
+                    if ( entry.isIntersecting ) {
+                        entry.target.classList.add( styles.techStackVisible );
+                    }
+                } );
+            },
+            { threshold: 0.1 }
+        );
+
+        if ( sectionRef.current ) {
+            observer.observe( sectionRef.current );
+        }
+
+        return () => observer.disconnect();
+    }, [] );
+
     return (
-        <div className={ styles.techStack }>
-            <h2 className={ styles.techStackTitle }>My Tech Stack</h2>
+        <div className={ styles.techStackSection } ref={ sectionRef }>
+            <div className={ styles.sectionHeader }>
+                <h2 className={ styles.techStackTitle }>
+                    My Tech Stack
+                    <div className={ styles.titleUnderline }></div>
+                </h2>
+                <p className={ styles.sectionDescription }>
+                    8+ years of experience with modern web technologies
+                </p>
+            </div>
             <div className={ styles.techStackGrid }>
                 { TechStackList.map( ( tech, idx ) => (
-                    <div key={ idx } className={ styles.techItem }>
-                        <img
-                            src={ tech.icon }
-                            alt={ tech.name }
-                            className={ styles.techIcon }
-                            style={ {
-                                filter: `drop-shadow(0 0 5px ${ tech.color }40)`
-                            } }
-                        />
+                    <div
+                        key={ idx }
+                        className={ styles.techItem }
+                        style={ { '--delay': `${ idx * 0.1 }s` } }
+                    >
+                        <div className={ styles.techIconWrapper }>
+                            <img
+                                src={ tech.icon }
+                                alt={ tech.name }
+                                className={ styles.techIcon }
+                                style={ {
+                                    filter: `drop-shadow(0 0 5px ${ tech.color }40)`
+                                } }
+                            />
+                            <div className={ styles.techIconGlow } style={ { backgroundColor: tech.color } }></div>
+                        </div>
                         <span className={ styles.techName }>{ tech.name }</span>
                     </div>
                 ) ) }
@@ -80,10 +116,34 @@ function TechStack () {
 }
 
 function Feature ( { title, description, icon } ) {
+    const featureRef = useRef( null );
+
+    useEffect( () => {
+        const observer = new IntersectionObserver(
+            ( entries ) => {
+                entries.forEach( entry => {
+                    if ( entry.isIntersecting ) {
+                        entry.target.classList.add( styles.featureVisible );
+                    }
+                } );
+            },
+            { threshold: 0.1 }
+        );
+
+        if ( featureRef.current ) {
+            observer.observe( featureRef.current );
+        }
+
+        return () => observer.disconnect();
+    }, [] );
+
     return (
-        <div className={ clsx( 'col col--4' ) }>
+        <div className={ clsx( 'col col--4' ) } ref={ featureRef }>
             <div className={ styles.featureCard }>
-                <div className={ styles.featureIcon }>{ icon }</div>
+                <div className={ styles.featureIconWrapper }>
+                    <div className={ styles.featureIcon }>{ icon }</div>
+                    <div className={ styles.featureIconRing }></div>
+                </div>
                 <div className="text--center padding-horiz--md">
                     <h3>{ title }</h3>
                     <p>{ description }</p>
@@ -97,7 +157,16 @@ export default function HomepageFeatures () {
     return (
         <>
             <TechStack />
-            <section className={ styles.features }>
+            <section className={ styles.featuresSection }>
+                <div className={ styles.sectionHeader }>
+                    <h2 className={ styles.sectionTitle }>
+                        What I Do
+                        <div className={ styles.titleUnderline }></div>
+                    </h2>
+                    <p className={ styles.sectionDescription }>
+                        Specialized in modern web development
+                    </p>
+                </div>
                 <div className="container">
                     <div className="row">
                         { FeatureList.map( ( props, idx ) => (

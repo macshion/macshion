@@ -3,43 +3,93 @@
  * and scoped locally.
  */
 
+:root[data-theme='light'] {
+  --particle-color: rgba(0, 153, 255, 0.8);
+  --particle-glow: rgba(0, 153, 255, 0.3);
+  --text-color: #2b3a4a;
+  --secondary-text: #4a5568;
+  --grid-color: rgba(0, 153, 255, 0.3);
+}
+
+:root[data-theme='dark'] {
+  --particle-color: rgba(0, 204, 255, 0.8);
+  --particle-glow: rgba(0, 204, 255, 0.3);
+  --text-color: #ffffff;
+  --secondary-text: rgba(255, 255, 255, 0.7);
+  --grid-color: rgba(0, 204, 255, 0.2);
+}
+
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(45deg, rgba(0,0,0,0.9) 0%, rgba(0,153,255,0.2) 100%);
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(45deg, 
+    var(--ifm-background-color) 0%, 
+    rgba(0,153,255,0.1) 100%
+  );
 }
 
 .heroContent {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   animation: fadeIn 1s ease-out;
 }
 
 .heroTitle {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
+  margin-bottom: 1.5rem;
   background: linear-gradient(120deg, #00ccff, #0099ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 1rem;
   text-shadow: 0 0 30px rgba(0, 204, 255, 0.3);
 }
 
 .heroSubtitle {
   font-size: 1.5rem;
-  color: var(--ifm-color-secondary);
+  color: var(--text-color);
   margin-bottom: 2rem;
+  line-height: 1.6;
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+/* 打字机效果 */
+.typewriter {
+  position: relative;
+  display: inline-block;
+  text-shadow: none;
+  background: linear-gradient(120deg, #00ccff, #0099ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
 }
 
+.cursor {
+  display: inline-block;
+  margin-left: 2px;
+  color: var(--ifm-color-primary);
+  animation: blink 1s step-end infinite;
+  font-weight: 100;
+}
+
+/* 渐变文字 */
+.gradientText {
+  display: inline-block;
+  background: linear-gradient(120deg, #ff6b6b, #ff9f43);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.focusText {
+  display: inline-block;
+  color: #2563eb;
+  text-shadow: 0 0 10px rgba(37, 99, 235, 0.3);
+}
+
+/* 社交链接 */
 .socialLinks {
   display: flex;
   justify-content: center;
@@ -48,17 +98,125 @@
 }
 
 .socialLink {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--ifm-color-primary);
   transition: all 0.3s ease;
+  position: relative;
+}
+
+.socialLink::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  padding: 5px 10px;
+  background: rgba(0, 153, 255, 0.1);
+  border-radius: 4px;
+  font-size: 0.8rem;
+  opacity: 0;
+  transition: all 0.3s ease;
+  color: var(--text-color);
+}
+
+.socialLink:hover::before {
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
 }
 
 .socialLink:hover {
   color: var(--ifm-color-primary-light);
-  transform: translateY(-2px);
-  text-shadow: 0 0 10px var(--ifm-color-primary);
+  transform: translateY(-5px);
+  text-shadow: 0 0 20px var(--ifm-color-primary);
 }
 
+/* 动画背景 */
+.animatedBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.particle {
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle, 
+    var(--particle-color) 0%, 
+    var(--particle-glow) 30%, 
+    transparent 70%
+  );
+  border-radius: 50%;
+  animation: float var(--speed) infinite;
+  animation-delay: var(--delay);
+  opacity: 0;
+  filter: blur(1px);
+  box-shadow: 0 0 10px rgba(0,204,255,0.5);
+}
+
+/* 修改 CTA 按钮样式 */
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--ifm-color-primary);
+  background: transparent;
+  border: 2px solid var(--ifm-color-primary);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.ctaButton::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--ifm-color-primary);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+/* 深色模式下的悬停效果 */
+[data-theme='dark'] .ctaButton:hover {
+  color: var(--ifm-background-color);
+  text-decoration: none;
+}
+
+/* 浅色模式下的悬停效果 */
+[data-theme='light'] .ctaButton:hover {
+  color: #ffffff;  /* 白色文字 */
+  text-decoration: none;
+}
+
+.ctaButton:hover::after {
+  opacity: 1;
+}
+
+/* 移除之前的 ctaButtonBg */
+.ctaButtonBg {
+  display: none;
+}
+
+/* 动画关键帧 */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -67,6 +225,72 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes blink {
+  from, to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translate(var(--startX, 0), 100vh) rotate(0deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: var(--maxOpacity, 0.8);
+  }
+  80% {
+    opacity: var(--maxOpacity, 0.8);
+  }
+  100% {
+    transform: translate(
+      calc(var(--startX, 0) + var(--moveX, 200px)), 
+      -100px
+    ) rotate(var(--rotate, 360deg));
+    opacity: 0;
+  }
+}
+
+@keyframes gridMove {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.3;
+  }
+}
+
+@keyframes meteor {
+  0% {
+    transform: translate(100vw, -100vh) rotate(-45deg);
+    opacity: 1;
+    width: 2px;
+  }
+  20% {
+    width: 50px;
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-100vw, 100vh) rotate(-45deg);
+    opacity: 0;
+    width: 2px;
   }
 }
 
@@ -82,4 +306,62 @@
   .heroSubtitle {
     font-size: 1.2rem;
   }
+}
+
+/* 添加网格背景 */
+.animatedBackground::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(var(--grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: gridMove 20s linear infinite;
+  opacity: 0.4;
+}
+
+/* 修改光晕效果 */
+.animatedBackground::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150vh;
+  height: 150vh;
+  background: radial-gradient(circle, 
+    rgba(0, 204, 255, 0.2) 0%, 
+    rgba(0, 204, 255, 0.1) 30%,
+    transparent 70%
+  );
+  animation: pulse 8s ease-in-out infinite;
+}
+
+/* 添加淡入动画类 */
+.fadeInFirst {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 2s forwards;
+    /* 2s 延迟等待打字机效果完成 */
+}
+
+.fadeInSecond {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 2.5s forwards;
+    /* 2.5s 延迟，在第一行之后显示 */
+}
+
+/* 添加淡入上移动画 */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
