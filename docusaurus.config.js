@@ -5,14 +5,14 @@ const darkCodeTheme = require( 'prism-react-renderer/themes/dracula' );
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 ( module.exports = {
     title: 'Macshion\'s Blog',
-    tagline: 'カンの技術ブログ',
+    tagline: '👋 I\'m a Front- End Engineer',
     url: 'https://your-docusaurus-test-site.com',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
     organizationName: 'macshion', // Usually your GitHub org/user name.
-    projectName: 'docusaurus', // Usually your repo name.
+    projectName: 'macshion', // Usually your repo name.
     i18n: {
         defaultLocale: 'ja',
         locales: [ 'ja' ],

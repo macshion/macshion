@@ -205,7 +205,7 @@ export default function Home () {
 
     return (
         <Layout
-            title={ siteConfig.title }
+            title={ `${ siteConfig.tagline }` }
             description="Front-End Engineer's personal blog and technical documentation">
             <HomepageHeader />
             <main>
