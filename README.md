@@ -1,6 +1,8 @@
 ### Hi there 👋 I'm a Front-End Engineer😊 
 I am passionate about coding/programming. ❤️
 
+Visit my blog here: [Macshion's Blog](https://blog.macshion.net)
+
 ## My Tech Stack: 
 
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
