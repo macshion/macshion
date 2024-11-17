@@ -4,9 +4,9 @@ const darkCodeTheme = require( 'prism-react-renderer/themes/dracula' );
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 ( module.exports = {
-    title: 'Macshion\'s Blog',
-    tagline: '👋 I\'m a Front- End Engineer',
-    url: 'https://your-docusaurus-test-site.com',
+    title: 'Macshion',
+    tagline: 'カンの技術ブログ',
+    url: 'https://blog.macshion.net',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',

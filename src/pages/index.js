@@ -123,27 +123,28 @@ function LatestBlogPosts () {
     const [ posts, setPosts ] = React.useState( [] );
 
     React.useEffect( () => {
-        // 获取 RSS feed
         async function fetchRSSFeed () {
             try {
-                // 获取 RSS feed
                 const response = await fetch( '/blog/rss.xml' );
                 const xmlText = await response.text();
 
-                // 解析 XML
                 const parser = new DOMParser();
                 const xmlDoc = parser.parseFromString( xmlText, 'text/xml' );
                 const items = xmlDoc.querySelectorAll( 'item' );
 
-                // 转换为文章数组
-                const blogPosts = Array.from( items ).slice( 0, 5 ).map( item => ( {
-                    title: item.querySelector( 'title' ).textContent,
-                    link: item.querySelector( 'link' ).textContent,
-                    description: item.querySelector( 'description' ).textContent,
-                    date: new Date( item.querySelector( 'pubDate' ).textContent ),
-                    author: item.querySelector( 'author' )?.textContent || 'Macshion',
-                    categories: Array.from( item.querySelectorAll( 'category' ) ).map( cat => cat.textContent )
-                } ) );
+                const blogPosts = Array.from( items ).slice( 0, 5 ).map( item => {
+                    const link = item.querySelector( 'link' ).textContent;
+                    const path = new URL( link ).pathname;
+
+                    return {
+                        title: item.querySelector( 'title' ).textContent,
+                        link: path,
+                        description: item.querySelector( 'description' ).textContent,
+                        date: new Date( item.querySelector( 'pubDate' ).textContent ),
+                        author: item.querySelector( 'author' )?.textContent || 'Macshion',
+                        categories: Array.from( item.querySelectorAll( 'category' ) ).map( cat => cat.textContent )
+                    };
+                } );
 
                 console.log( 'Parsed blog posts:', blogPosts );
                 setPosts( blogPosts );
