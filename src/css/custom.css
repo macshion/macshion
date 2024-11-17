@@ -66,8 +66,17 @@ ruby {
 ruby rt {
   font-weight: normal;
   font-size: 0.6em;
+  opacity: 0.9;
+}
+
+[data-theme='dark'] ruby rt {
   color: var(--ifm-color-secondary);
   opacity: 0.8;
+}
+
+[data-theme='light'] ruby rt {
+  color: #4a5568;
+  opacity: 0.95;
 }
 
 ruby:hover {
@@ -75,7 +84,7 @@ ruby:hover {
 }
 
 ruby:hover rt {
-  color: var(--ifm-color-primary-lighter);
+  color: var(--ifm-color-primary);
   transition: all 0.3s ease;
 }
 
