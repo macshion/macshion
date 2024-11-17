@@ -8,16 +8,78 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(45deg, rgba(0,0,0,0.9) 0%, rgba(0,153,255,0.2) 100%);
 }
 
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.heroContent {
+  position: relative;
+  z-index: 1;
+  animation: fadeIn 1s ease-out;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(120deg, #00ccff, #0099ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 30px rgba(0, 204, 255, 0.3);
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  color: var(--ifm-color-secondary);
+  margin-bottom: 2rem;
 }
 
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.socialLink {
+  font-size: 1.5rem;
+  color: var(--ifm-color-primary);
+  transition: all 0.3s ease;
+}
+
+.socialLink:hover {
+  color: var(--ifm-color-primary-light);
+  transform: translateY(-2px);
+  text-shadow: 0 0 10px var(--ifm-color-primary);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+  
+  .heroTitle {
+    font-size: 2rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.2rem;
+  }
 }

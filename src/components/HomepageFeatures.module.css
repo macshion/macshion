@@ -1,11 +1,110 @@
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 4rem 0;
   width: 100%;
+  background: linear-gradient(180deg, rgba(26,26,26,0) 0%, rgba(0,204,255,0.1) 100%);
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.featureCard {
+  height: 100%;
+  padding: 2rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 204, 255, 0.2);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  margin: 1rem;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 204, 255, 0.3);
+  border-color: var(--ifm-color-primary);
+}
+
+.featureIcon {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba(0, 204, 255, 0.5);
+}
+
+.featureCard h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  background: linear-gradient(120deg, #00ccff, #0099ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.featureCard p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--ifm-color-secondary);
+}
+
+/* 新增的技术栈样式 */
+.techStack {
+  padding: 4rem 0;
+  background: linear-gradient(45deg, rgba(0,0,0,0.8) 0%, rgba(0,153,255,0.1) 100%);
+}
+
+.techStackTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  background: linear-gradient(120deg, #00ccff, #0099ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.techStackGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.techItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.techItem:hover {
+  transform: translateY(-5px);
+}
+
+.techIcon {
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 0 5px rgba(0, 204, 255, 0.3));
+}
+
+.techItem:hover .techIcon {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 10px rgba(0, 204, 255, 0.5));
+}
+
+.techName {
+  font-size: 0.9rem;
+  color: var(--ifm-color-secondary);
+}
+
+@media screen and (max-width: 768px) {
+  .techStackGrid {
+    gap: 1.5rem;
+  }
+  
+  .techIcon {
+    width: 40px;
+    height: 40px;
+  }
 }

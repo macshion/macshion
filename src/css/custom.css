@@ -6,14 +6,29 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-color-primary: #0099ff;
+  --ifm-color-primary-dark: #0088e6;
+  --ifm-color-primary-darker: #0081d9;
+  --ifm-color-primary-darkest: #006ab3;
+  --ifm-color-primary-light: #1aa3ff;
+  --ifm-color-primary-lighter: #26a9ff;
+  --ifm-color-primary-lightest: #4db8ff;
   --ifm-code-font-size: 95%;
+}
+
+/* 深色主题变量 */
+[data-theme='dark'] {
+  --ifm-color-primary: #00ccff;
+  --ifm-color-primary-dark: #00b8e6;
+  --ifm-color-primary-darker: #00add9;
+  --ifm-color-primary-darkest: #008fb3;
+  --ifm-color-primary-light: #1ad1ff;
+  --ifm-color-primary-lighter: #26d4ff;
+  --ifm-color-primary-lightest: #4ddbff;
+  --ifm-background-color: #1a1a1a;
+  --ifm-background-surface-color: #242526;
+  --ifm-navbar-background-color: rgba(36, 37, 38, 0.8);
+  --ifm-footer-background-color: #242526;
 }
 
 .docusaurus-highlight-code-line {
@@ -52,4 +67,38 @@ ruby rt {
     font-weight: normal;
   font-size: 0.6em;
   color: #888;
+}
+
+/* 添加毛玻璃效果的导航栏 */
+.navbar {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* 添加科技感的霓虹效果 */
+.navbar__title {
+  text-shadow: 0 0 10px var(--ifm-color-primary),
+               0 0 20px var(--ifm-color-primary),
+               0 0 30px var(--ifm-color-primary);
+}
+
+/* 为链接添加悬停效果 */
+.navbar__link:hover,
+.footer__link-item:hover {
+  text-shadow: 0 0 8px var(--ifm-color-primary);
+  transition: all 0.3s ease;
+}
+
+/* 为卡片添加科技感的边框效果 */
+.card {
+  border: 1px solid rgba(0, 204, 255, 0.2);
+  background: rgba(26, 26, 26, 0.6);
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 15px rgba(0, 204, 255, 0.3);
+  transform: translateY(-2px);
 }

@@ -118,6 +118,19 @@ const darkCodeTheme = require( 'prism-react-renderer/themes/dracula' );
                 theme: lightCodeTheme,
                 darkTheme: darkCodeTheme,
             },
-            metadata: [ { name: 'lastUpdated', content: 'true' } ]
+            metadata: [ { name: 'lastUpdated', content: 'true' } ],
+            colorMode: {
+                defaultMode: 'dark',
+                disableSwitch: false,
+                respectPrefersColorScheme: false,
+            },
+            head: [
+                // 其他配置...
+                {
+                    href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css',
+                    rel: 'stylesheet',
+                    type: 'text/css',
+                },
+            ],
         } ),
 } );
