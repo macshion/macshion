@@ -1,5 +1,5 @@
 ---
-title: 競合状態と同期ツール `sync` パッケージ
+title: Go言語の競合状態と同期ツール `sync` パッケージ
 description: Go言語の競合状態と同期ツール `sync` パッケージについてまとめました。
 tags:
   - Go

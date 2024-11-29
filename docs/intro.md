@@ -9,9 +9,9 @@ sidebar_position: 1
 カテゴリーは以下の通りです。
 
 - [フロントエンド](/docs/frontend/)
-- バックエンド
-- データーベース
-- テスト
+- [バックエンド](/docs/backend/)
+- [データーベース](/docs/database/)
+- [テスト](/docs/test/)
 - [インフラ関連](/docs/devops/)
 
 最近の投稿は[こちら](/blog)からご覧いただけます。
