@@ -81,15 +81,15 @@ function HomepageHeader () {
             <div className="container">
                 <div className={ styles.heroContent }>
                     <h1 className={ styles.heroTitle }>
-                        <TypeWriter text="Hi there 👋 I'm a Front-End Engineer" speed={ 80 } />
+                        <TypeWriter text="こんにちは 👋 フロントエンドエンジニアです" speed={ 80 } />
                     </h1>
                     <p className={ styles.heroSubtitle }>
                         <span className={ `${ styles.gradientText } ${ styles.fadeInFirst }` }>
-                            I am passionate about coding/programming ❤️
+                            プログラミングが好きです。 ❤️
                         </span>
                         <br />
                         <span className={ `${ styles.focusText } ${ styles.fadeInSecond }` }>
-                            Focused on building products with JavaScript/TypeScript, specifically React
+                            主にJavaScript/TypeScriptとReactを使ってWebサイトを作っています
                         </span>
                     </p>
 
@@ -108,7 +108,7 @@ function HomepageHeader () {
 
                     <div className={ styles.buttons }>
                         <Link className={ styles.ctaButton } to="/docs/intro">
-                            📚 View Documentation
+                            📚 私のライブラリー
                         </Link>
                     </div>
                 </div>
@@ -165,7 +165,7 @@ function LatestBlogPosts () {
             <div className="container">
                 <div className={ styles.sectionHeader }>
                     <h2 className={ styles.sectionTitle }>
-                        Latest Posts
+                        最近の投稿
                         <div className={ styles.titleUnderline }></div>
                     </h2>
                 </div>
@@ -207,7 +207,7 @@ export default function Home () {
     return (
         <Layout
             title={ `${ siteConfig.tagline }` }
-            description="Front-End Engineer's personal blog and technical documentation">
+            description="フロントエンドエンジニアの個人ブログと技術ドキュメント">
             <HomepageHeader />
             <main>
                 <HomepageFeatures />

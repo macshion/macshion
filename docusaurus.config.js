@@ -4,7 +4,7 @@ const darkCodeTheme = require( 'prism-react-renderer/themes/dracula' );
 // With JSDoc @type annotations, IDEs can provide config autocompletion
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 ( module.exports = {
-    title: 'Macshion',
+    title: 'Macshion\'s Blog',
     tagline: 'カンの技術ブログ',
     url: 'https://blog.macshion.net',
     baseUrl: '/',
@@ -24,9 +24,8 @@ const darkCodeTheme = require( 'prism-react-renderer/themes/dracula' );
             /** @type {import('@docusaurus/preset-classic').Options} */
             ( {
                 docs: {
-                    // sidebarPath: require.resolve( './sidebars.js' ),
-                    // Please change this to your repo.
-                    // editUrl: 'https://github.com/macshion/macshion/docs/',
+                    path: 'docs',
+                    routeBasePath: 'docs',
                     showLastUpdateAuthor: true,
                     showLastUpdateTime: true,
                 },
@@ -34,11 +33,11 @@ const darkCodeTheme = require( 'prism-react-renderer/themes/dracula' );
                     path: 'blog',
                     routeBasePath: 'blog',
                     showReadingTime: true,
-                    blogTitle: 'Blog',
-                    blogDescription: 'A Front-End Engineer\'s Blog',
+                    blogTitle: 'ブログ',
+                    blogDescription: 'フロントエンドエンジニアのブログ',
                     postsPerPage: 5,
                     blogSidebarCount: 'ALL',
-                    blogSidebarTitle: 'All Posts',
+                    blogSidebarTitle: 'すべての投稿',
                     feedOptions: {
                         type: [ 'rss', 'json' ],
                         title: 'Macshion\'s Blog',
@@ -51,6 +50,19 @@ const darkCodeTheme = require( 'prism-react-renderer/themes/dracula' );
                     customCss: require.resolve( './src/css/custom.css' ),
                 },
             } ),
+        ],
+    ],
+    plugins: [
+        [
+            '@docusaurus/plugin-content-docs',
+            {
+                id: 'jp',
+                path: 'jp',
+                routeBasePath: 'jp',
+                // sidebarPath: require.resolve( './sidebars-jp.js' ),
+                showLastUpdateAuthor: true,
+                showLastUpdateTime: true,
+            },
         ],
     ],
 
@@ -68,9 +80,16 @@ const darkCodeTheme = require( 'prism-react-renderer/themes/dracula' );
                         type: 'doc',
                         docId: 'intro',
                         position: 'left',
-                        label: 'Engineer\'s Library',
+                        label: 'ライブラリー',
                     },
-                    { to: '/blog', label: 'Blog', position: 'left' },
+                    { to: '/blog', label: 'ブログ', position: 'left' },
+                    {
+                        type: 'doc',
+                        docId: 'intro',
+                        docsPluginId: 'jp',
+                        position: 'left',
+                        label: '日本語学習',
+                    },
                     {
                         href: 'https://github.com/macshion/macshion',
                         label: 'GitHub',

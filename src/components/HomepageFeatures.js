@@ -82,11 +82,11 @@ function TechStack () {
         <div className={ styles.techStackSection } ref={ sectionRef }>
             <div className={ styles.sectionHeader }>
                 <h2 className={ styles.techStackTitle }>
-                    My Tech Stack
+                    私の技術スタック
                     <div className={ styles.titleUnderline }></div>
                 </h2>
                 <p className={ styles.sectionDescription }>
-                    8+ years of experience with modern web technologies
+                    IT業界において約9年間、多様な分野での大規模システム開発に携わり、特にフロントエンド開発を中心に活動してきました。
                 </p>
             </div>
             <div className={ styles.techStackGrid }>
@@ -160,11 +160,11 @@ export default function HomepageFeatures () {
             <section className={ styles.featuresSection }>
                 <div className={ styles.sectionHeader }>
                     <h2 className={ styles.sectionTitle }>
-                        What I Do
+                        私がやっていること
                         <div className={ styles.titleUnderline }></div>
                     </h2>
                     <p className={ styles.sectionDescription }>
-                        Specialized in modern web development
+                        日本に滞在している中國人のフロントエンドエンジニアとして現代のWeb開発をやっています。
                     </p>
                 </div>
                 <div className="container">
