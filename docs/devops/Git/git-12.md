@@ -26,9 +26,10 @@ git checkout ${topic}
 
 - `${topic}` は作業ブランチの名前に置き換えてください。
 - **例**: 作業ブランチが`feature/update-ui`の場合は以下のようにします：
-  ```bash
+
+```bash
   git checkout feature/update-ui
-  ```
+```
 
 ---
 
@@ -39,37 +40,38 @@ git checkout ${topic}
 git rebase -i HEAD~${コミット数}
 ```
 
-- **HEAD~${コミット数}**: この指定により、直近のコミット履歴を指定します。
-  - **例**: コミット数が4つの場合：
-    ```bash
-    git rebase -i HEAD~4
-    ```
-  - これにより、最新の4つのコミットを対象に`rebase`を行います。
+**`HEAD~${コミット数}`**: この指定により、直近のコミット履歴を指定します。
+  **例**: コミット数が4つの場合：
+
+  ```bash
+  git rebase -i HEAD~4
+  ```
+  これにより、最新の4つのコミットを対象に`rebase`を行います。
 
 #### vimが開いたら以下の手順を実行します：
 1. **1行目のコミットはそのまま`pick`のままにする**
-   - これは、このコミットが「基準」になるためです。
+   これは、このコミットが「基準」になるためです。
 2. **2行目以降の`pick`を`s`に変更**
-   - `s`（squash）は、現在のコミットを1つ上のコミットにまとめる動作を指定します。
+   `s`（squash）は、現在のコミットを1つ上のコミットにまとめる動作を指定します。
+   
+    **例:**
+    ```
+    pick abc123 Initial commit
+    pick def456 Add new feature
+    pick ghi789 Fix bug
+    pick jkl012 Update README
+    ```
 
-#### 例:
-```
-pick abc123 Initial commit
-pick def456 Add new feature
-pick ghi789 Fix bug
-pick jkl012 Update README
-```
-
-以下のように変更します：
-```
-pick abc123 Initial commit
-s def456 Add new feature
-s ghi789 Fix bug
-s jkl012 Update README
-```
+    以下のように変更します：
+    ```
+    pick abc123 Initial commit
+    s def456 Add new feature
+    s ghi789 Fix bug
+    s jkl012 Update README
+    ```
 
 3. **変更を保存**
-   - `:wq` と入力して保存してvimを終了します。
+   `:wq` と入力して保存してvimを終了します。
 
 ---
 
@@ -80,8 +82,8 @@ s jkl012 Update README
 git rebase main
 ```
 
-- この操作により、`main`ブランチの最新の変更を取り込みます。
-- **注意**: コンフリクトが発生した場合、適切に解消してから以下のコマンドを実行してください：
+この操作により、`main`ブランチの最新の変更を取り込みます。
+**注意**: コンフリクトが発生した場合、適切に解消してから以下のコマンドを実行してください：
   ```bash
   git rebase --continue
   ```
@@ -95,7 +97,7 @@ git rebase main
 git log -2
 ```
 
-- 最新のコミット2つを確認します。これにより、直近のコミットが1つにまとめられたことを確認できます。
+最新のコミット2つを確認します。これにより、直近のコミットが1つにまとめられたことを確認できます。
 
 ---
 
@@ -106,7 +108,7 @@ git log -2
 git push -f origin ${topic}
 ```
 
-- **注意**: `-f`（force push）はリモートリポジトリの履歴を上書きする操作のため、使用には慎重を期してください。
+**注意**: `-f`（force push）はリモートリポジトリの履歴を上書きする操作のため、使用には慎重を期してください。
 
 ---
 
