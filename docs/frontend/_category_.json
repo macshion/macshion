@@ -2,6 +2,8 @@
     "label": "フロントエンド",
     "position": 2,
     "link": {
-        "type": "generated-index"
+        "type": "generated-index",
+        "description": "フロントエンドの技術スタック",
+        "slug": "/frontend"
     }
 }

@@ -52,19 +52,19 @@ const darkCodeTheme = require( 'prism-react-renderer/themes/dracula' );
             } ),
         ],
     ],
-    plugins: [
-        [
-            '@docusaurus/plugin-content-docs',
-            {
-                id: 'jp',
-                path: 'jp',
-                routeBasePath: 'jp',
-                // sidebarPath: require.resolve( './sidebars-jp.js' ),
-                showLastUpdateAuthor: true,
-                showLastUpdateTime: true,
-            },
-        ],
-    ],
+    // plugins: [
+    //     [
+    //         '@docusaurus/plugin-content-docs',
+    //         {
+    //             id: 'jp',
+    //             path: 'jp',
+    //             routeBasePath: 'jp',
+    //             // sidebarPath: require.resolve( './sidebars-jp.js' ),
+    //             showLastUpdateAuthor: true,
+    //             showLastUpdateTime: true,
+    //         },
+    //     ],
+    // ],
 
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -83,13 +83,13 @@ const darkCodeTheme = require( 'prism-react-renderer/themes/dracula' );
                         label: 'ライブラリー',
                     },
                     { to: '/blog', label: 'ブログ', position: 'left' },
-                    {
-                        type: 'doc',
-                        docId: 'intro',
-                        docsPluginId: 'jp',
-                        position: 'left',
-                        label: '日本語学習',
-                    },
+                    // {
+                    //     type: 'doc',
+                    //     docId: 'intro',
+                    //     docsPluginId: 'jp',
+                    //     position: 'left',
+                    //     label: '日本語',
+                    // },
                     {
                         href: 'https://github.com/macshion/macshion',
                         label: 'GitHub',
