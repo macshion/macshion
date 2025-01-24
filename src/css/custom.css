@@ -120,6 +120,10 @@ ruby:hover rt {
   transition: all 0.3s ease;
 }
 
+[data-theme='light'] .card {
+  background: rgba(215, 230, 252, 0.6);
+}
+
 .card:hover {
   border-color: var(--ifm-color-primary);
   box-shadow: 0 0 15px rgba(0, 204, 255, 0.3);
