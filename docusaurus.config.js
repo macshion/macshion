@@ -5,8 +5,8 @@ const darkCodeTheme = require( 'prism-react-renderer/themes/dracula' );
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 ( module.exports = {
     title: 'Macshion\'s Blog',
-    tagline: 'カンの技術ブログ',
-    url: 'https://blog.macshion.net',
+    tagline: 'カンの技術ブログ | フロントエンドエンジニア',
+    url: 'https://kann.jp',
     baseUrl: '/',
     onBrokenLinks: 'ignore',
     onBrokenMarkdownLinks: 'warn',

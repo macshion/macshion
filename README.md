@@ -1,7 +1,7 @@
 ### Hi there 👋 I'm a Front-End Engineer😊 
 I am passionate about coding/programming. ❤️
 
-Visit my blog here: [Macshion's Blog](https://blog.macshion.net)
+Visit my blog here: [Macshion's Blog](https://kann.jp)
 
 ## My Tech Stack: 
 
