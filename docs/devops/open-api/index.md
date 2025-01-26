@@ -1,4 +1,4 @@
-# OpenAPI とは?
+# OpenAPI とは何ですか?
 
 OpenAPI とは、RESTful API を設計、記述、共有するための標準的な仕様のことです。以前は「Swagger 仕様」として知られていましたが、現在では OpenAPI Initiative (OAI)によって管理されています。OpenAPI を使うことで、API の設計書を統一された形式で記述でき、開発者やツールがそれを利用しやすくなります。
 

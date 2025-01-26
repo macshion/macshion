@@ -1,9 +1,4 @@
 {
-  "label": "OpenAPI",
-  "position": 2,
-  "link": {
-    "type": "generated-index",
-    "description": "OpenAPIの技術スタック",
-    "slug": "/devops/open-api"
-  }
+    "label": "OpenAPI",
+    "position": 2
 }

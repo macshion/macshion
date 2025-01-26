@@ -1,3 +1,8 @@
+---
+id: linux-basic-file-operation-command
+sidebar_position: 1
+---
+
 # ファイル操作の基本的なLinuxコマンド
 
 ファイル操作の基本的なLinuxコマンドについて詳しく説明します。これらは、日常的なファイル管理やディレクトリ操作に必須のコマンドです。

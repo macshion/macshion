@@ -1,5 +1,9 @@
+---
+id: powshell-basic-and-use-scenario
+sidebar_position: 1
+---
 
-**1. PowerShellとは**
+# PowerShellとは何ですか
 
 PowerShellは、Windowsで標準搭載されている強力なコマンドラインシェルおよびスクリプト言語です。従来のコマンドプロンプト（cmd）に比べ、より高度なシステム管理や自動化の機能が提供されており、ITプロフェッショナルや開発者の間で幅広く利用されています。PowerShellは、Windowsのみならず、LinuxやmacOSでも利用可能なため、クロスプラットフォームでの管理にも便利です。
 

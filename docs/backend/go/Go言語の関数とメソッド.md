@@ -1,9 +1,12 @@
 ---
-title: Go言語の関数とメソッド
+id: golang-02
+sidebar_position: 3
 description: Go言語の関数とメソッドについてまとめました。
 tags:
   - Go
 ---
+
+# Go言語の関数とメソッド
 
 Go言語において、**関数 (function)** と **メソッド (method)** の主な違いは、**メソッドにはレシーバー (receiver)** と呼ばれる特定の型に関連付けられた要素がある点です。以下に違いを詳しく説明します。
 

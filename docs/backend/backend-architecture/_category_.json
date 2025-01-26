@@ -1,0 +1,9 @@
+{
+    "label": "バックエンドアーキテクチャ",
+    "position": 1,
+    "link": {
+        "type": "generated-index",
+        "description": "バックエンドアーキテクチャの技術スタック",
+        "slug": "/backend/backend-architecture"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "label": "統合テスト",
+    "position": 1,
+    "link": {
+        "type": "generated-index",
+        "description": "統合テストの技術スタック",
+        "slug": "/testing/integration-testing"
+    }
+}

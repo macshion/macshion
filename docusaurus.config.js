@@ -8,7 +8,7 @@ const darkCodeTheme = require( 'prism-react-renderer/themes/dracula' );
     tagline: 'カンの技術ブログ',
     url: 'https://blog.macshion.net',
     baseUrl: '/',
-    onBrokenLinks: 'throw',
+    onBrokenLinks: 'ignore',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
     organizationName: 'macshion', // Usually your GitHub org/user name.

@@ -1,0 +1,9 @@
+{
+    "label": "PowerShell",
+    "position": 1,
+    "link": {
+        "type": "generated-index",
+        "description": "PowerShellの技術スタック",
+        "slug": "/devops/Powshell"
+    }
+}

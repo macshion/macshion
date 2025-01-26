@@ -1,9 +1,9 @@
 ---
-title: Go言語の並行処理
-description: Go言語の並行処理についてまとめました。
-tags:
-  - Go
+id: golang-03
+sidebar_position: 4
 ---
+
+# Go言語の並行処理
 
 ## **ゴルーチン (Goroutines) について詳しく説明**
 

@@ -1,0 +1,9 @@
+{
+    "label": "Spring Boot",
+    "position": 5,
+    "link": {
+        "type": "generated-index",
+        "description": "Spring Bootの技術スタック",
+        "slug": "/backend/spring-boot"
+    }
+}

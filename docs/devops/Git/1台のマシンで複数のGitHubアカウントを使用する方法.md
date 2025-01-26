@@ -1,3 +1,8 @@
+---
+id: git-multiple-github-accounts
+sidebar_position: 78
+---
+
 # 1台のマシンで複数のGitHubアカウントを使用する方法
 
 **1台のマシンで複数のGitHubアカウントを使用する方法**について解説しています。

@@ -1,11 +1,11 @@
-
+---
+id: powshell-ssh-key-auth
+sidebar_position: 2
 ---
 
-### PowerShellにおけるSSH接続と鍵認証の設定方法
+# PowerShellにおけるSSH接続と鍵認証の設定方法
 
 PowerShellでは、SSHを利用した安全なリモート接続が可能です。特にWindows 10以降では、OpenSSHが標準で搭載されているため、追加のソフトウェアなしでSSH接続を設定し、サーバーの管理やファイル転送を行えます。このノートでは、PowerShellでSSHの鍵認証を設定し、パスワード不要でリモート接続する方法について解説します。
-
----
 
 **1. SSH鍵ペアの生成**
 

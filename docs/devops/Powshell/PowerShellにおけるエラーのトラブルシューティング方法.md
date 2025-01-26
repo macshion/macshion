@@ -1,3 +1,9 @@
+---
+id: powshell-error-troubleshooting
+sidebar_position: 3
+---
+
+# PowerShellにおけるエラーのトラブルシューティング方法
 
 PowerShellでスクリプトを実行している際に、時折エラーに遭遇することがあります。特に初心者の方にとって、エラーメッセージは難解で、どこを修正すればよいのか分かりにくい場合があります。このノートでは、PowerShellでよくあるエラーとその対処法について解説します。
 

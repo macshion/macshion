@@ -1,3 +1,8 @@
+---
+id: powshell-windows-linux-command-line-difference
+sidebar_position: 4
+---
+
 # WindowsとLinuxのコマンドラインの違いとPowerShellへの適応方法
 
 LinuxユーザーがWindowsのPowerShellを使う際、最初に感じるのはコマンドの違いと構文の習慣です。WindowsとLinuxのコマンドラインには基本的な違いが多く、特にPowerShellはLinuxのShellとは異なる操作体系を持っています。ここでは、LinuxのShellに慣れたユーザーがPowerShellに適応するためのポイントを解説します。

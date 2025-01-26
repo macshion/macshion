@@ -1,3 +1,8 @@
+---
+id: golang-10
+sidebar_position: 10
+---
+
 # 標準ライブラリを使ったファイル操作とJSONの読み書き
 
 ```go

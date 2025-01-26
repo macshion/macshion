@@ -1,7 +1,7 @@
 ---
 id: go
 title: Go言語（Golang）
-sidebar_position: 3
+sidebar_position: 1
 last_update:
   date: 2024-11-17
   author: Macshion
