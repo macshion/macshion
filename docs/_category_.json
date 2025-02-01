@@ -2,6 +2,8 @@
   "label": "ライブラリー",
   "position": 2,
   "link": {
-    "type": "generated-index"
+    "slug": "/intro",
+    "type": "generated-index",
+    "description": "このカテゴリーは、Macshionの技術ブログです。エンジニア向けの「図書館」のようなものです。学習したことをメモしていきます。"
   }
 }

@@ -3,22 +3,22 @@ import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
 
 const TechStackList = [
-    { name: 'JavaScript', icon: '/img/tech/javascript.png', color: '#F7DF1E' },
-    { name: 'TypeScript', icon: '/img/tech/typescript.png', color: '#3178C6' },
-    { name: 'React', icon: '/img/tech/react.png', color: '#61DAFB' },
-    { name: 'Vue', icon: '/img/tech/vue.png', color: '#4FC08D' },
-    { name: 'Node.js', icon: '/img/tech/nodejs.png', color: '#339933' },
-    { name: 'HTML5', icon: '/img/tech/html5.png', color: '#E34F26' },
-    { name: 'CSS3', icon: '/img/tech/css3.png', color: '#1572B6' },
-    { name: 'Sass', icon: '/img/tech/sass.png', color: '#CC6699' },
-    { name: 'Less', icon: '/img/tech/less.png', color: '#1D365D' },
-    { name: 'Bootstrap', icon: '/img/tech/bootstrap.png', color: '#7952B3' },
-    { name: 'jQuery', icon: '/img/tech/jquery.png', color: '#0769AD' },
-    { name: 'Git', icon: '/img/tech/git.png', color: '#F05032' },
-    { name: 'Docker', icon: '/img/tech/docker.png', color: '#2496ED' },
-    { name: 'Webpack', icon: '/img/tech/webpack.png', color: '#8DD6F9' },
-    { name: 'VS Code', icon: '/img/tech/vscode.png', color: '#007ACC' },
-    { name: 'npm', icon: '/img/tech/npm.png', color: '#CB3837' }
+    { name: 'JavaScript', icon: '/img/tech/javascript.png', color: '#F7DF1E', link: '/docs/frontend/javascript' },
+    { name: 'TypeScript', icon: '/img/tech/typescript.png', color: '#3178C6', link: '/docs/frontend/typescript' },
+    { name: 'React', icon: '/img/tech/react.png', color: '#61DAFB', link: '/docs/frontend/react' },
+    { name: 'Vue', icon: '/img/tech/vue.png', color: '#4FC08D', link: '/docs/frontend/vue' },
+    { name: 'Node.js', icon: '/img/tech/nodejs.png', color: '#339933', link: '#' },
+    { name: 'HTML5', icon: '/img/tech/html5.png', color: '#E34F26', link: '/docs/frontend/html' },
+    { name: 'CSS3', icon: '/img/tech/css3.png', color: '#1572B6', link: '/docs/frontend/css' },
+    { name: 'Sass', icon: '/img/tech/sass.png', color: '#CC6699', link: '#' },
+    { name: 'Less', icon: '/img/tech/less.png', color: '#1D365D', link: '#' },
+    { name: 'Bootstrap', icon: '/img/tech/bootstrap.png', color: '#7952B3', link: '#' },
+    { name: 'jQuery', icon: '/img/tech/jquery.png', color: '#0769AD', link: '#' },
+    { name: 'Git', icon: '/img/tech/git.png', color: '#F05032', link: '/docs/devops/git' },
+    { name: 'Docker', icon: '/img/tech/docker.png', color: '#2496ED', link: '#' },
+    { name: 'Webpack', icon: '/img/tech/webpack.png', color: '#8DD6F9', link: '#' },
+    { name: 'VS Code', icon: '/img/tech/vscode.png', color: '#007ACC', link: '#' },
+    { name: 'npm', icon: '/img/tech/npm.png', color: '#CB3837', link: '#' }
 ];
 
 const FeatureList = [
@@ -95,6 +95,7 @@ function TechStack () {
                         key={ idx }
                         className={ styles.techItem }
                         style={ { '--delay': `${ idx * 0.1 }s` } }
+                        onClick={ () => window.location.href = window.location.origin + tech.link }
                     >
                         <div className={ styles.techIconWrapper }>
                             <img

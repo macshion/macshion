@@ -1,9 +1,0 @@
-{
-    "label": "Node.js",
-    "position": 4,
-    "link": {
-        "type": "generated-index",
-        "description": "Node.jsの技術スタック",
-        "slug": "/backend/nodejs"
-    }
-}
