@@ -1,9 +1,0 @@
-{
-    "label": "Kubernetes",
-    "position": 12,
-    "link": {
-        "type": "generated-index",
-        "description": "Kubernetesの技術スタック",
-        "slug": "/devops/kubernetes"
-    }
-}

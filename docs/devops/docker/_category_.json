@@ -1,9 +1,0 @@
-{
-    "label": "Docker",
-    "position": 1,
-    "link": {
-        "type": "generated-index",
-        "description": "Dockerの技術スタック",
-        "slug": "/devops/docker"
-    }
-}
