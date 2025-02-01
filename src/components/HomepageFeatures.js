@@ -26,14 +26,10 @@ const FeatureList = [
     {
         title: 'フロントエンド専門家',
         description: (
-            <div>
-                <div style={ { textAlign: 'left' } }>
-                    ⭐8年以上のWeb開発経験を持つ<br />
-                    フロントエンドエンジニア。<br />
-                    ⭐レスポンシブデザイン、クロスブラウザ対応、パフォーマンス最適化が得意。
-                </div>
-                <br />
-                <a href="/blog">ブログへ</a>
+            <div style={ { textAlign: 'left' } }>
+                ⭐8年以上のWeb開発経験を持つ<br />
+                フロントエンドエンジニア。<br />
+                ⭐レスポンシブデザイン、クロスブラウザ対応、パフォーマンス最適化が得意。<a href="/blog">ブログへ</a>
             </div>
         ),
         icon: '👨‍💻'
