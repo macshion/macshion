@@ -37,7 +37,7 @@ sidebar_position: 1
 - [Git](/docs/devops/git) - バージョン管理システム  
 - [Linux](/docs/devops/linux) - 開発環境として広く使われるOS  
 - [OpenAPI](/docs/devops/open-api) - API設計とドキュメント管理の標準仕様  
-- [PowerShell](/docs/devops/Powshell) - Windows向けの強力なスクリプトツール  
+- [PowerShell](/docs/devops/powershell) - Windows向けの強力なスクリプトツール  
 
 ## 🔥 最新の投稿
 最新の技術記事や開発に役立つ情報は、[こちら](/blog) からご覧いただけます。  

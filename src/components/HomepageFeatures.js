@@ -7,28 +7,34 @@ const TechStackList = [
     { name: 'TypeScript', icon: '/img/tech/typescript.png', color: '#3178C6', link: '/docs/frontend/typescript' },
     { name: 'React', icon: '/img/tech/react.png', color: '#61DAFB', link: '/docs/frontend/react' },
     { name: 'Vue', icon: '/img/tech/vue.png', color: '#4FC08D', link: '/docs/frontend/vue' },
-    { name: 'Node.js', icon: '/img/tech/nodejs.png', color: '#339933', link: '#' },
     { name: 'HTML5', icon: '/img/tech/html5.png', color: '#E34F26', link: '/docs/frontend/html' },
     { name: 'CSS3', icon: '/img/tech/css3.png', color: '#1572B6', link: '/docs/frontend/css' },
+    { name: 'Git', icon: '/img/tech/git.png', color: '#F05032', link: '/docs/devops/git' },
+    { name: 'GO', icon: '/img/tech/go.png', color: '#2496ED', link: '/docs/backend/go' },
+    { name: 'Docker', icon: '/img/tech/docker.png', color: '#2496ED', link: '/docs/devops/docker' },
+    { name: 'Webpack', icon: '/img/tech/webpack.png', color: '#8DD6F9', link: '#' },
+    { name: 'VS Code', icon: '/img/tech/vscode.png', color: '#007ACC', link: '#' },
+    { name: 'npm', icon: '/img/tech/npm.png', color: '#CB3837', link: '#' },
+    { name: 'Node.js', icon: '/img/tech/nodejs.png', color: '#339933', link: '#' },
     { name: 'Sass', icon: '/img/tech/sass.png', color: '#CC6699', link: '#' },
     { name: 'Less', icon: '/img/tech/less.png', color: '#1D365D', link: '#' },
     { name: 'Bootstrap', icon: '/img/tech/bootstrap.png', color: '#7952B3', link: '#' },
     { name: 'jQuery', icon: '/img/tech/jquery.png', color: '#0769AD', link: '#' },
-    { name: 'Git', icon: '/img/tech/git.png', color: '#F05032', link: '/docs/devops/git' },
-    { name: 'Docker', icon: '/img/tech/docker.png', color: '#2496ED', link: '#' },
-    { name: 'Webpack', icon: '/img/tech/webpack.png', color: '#8DD6F9', link: '#' },
-    { name: 'VS Code', icon: '/img/tech/vscode.png', color: '#007ACC', link: '#' },
-    { name: 'npm', icon: '/img/tech/npm.png', color: '#CB3837', link: '#' }
 ];
 
 const FeatureList = [
     {
         title: 'フロントエンド専門家',
         description: (
-            <>
-                8年以上のWeb開発経験を持つフロントエンドエンジニア。
-                レスポンシブデザイン、クロスブラウザ対応、パフォーマンス最適化が得意。
-            </>
+            <div>
+                <div style={ { textAlign: 'left' } }>
+                    ⭐8年以上のWeb開発経験を持つ<br />
+                    フロントエンドエンジニア。<br />
+                    ⭐レスポンシブデザイン、クロスブラウザ対応、パフォーマンス最適化が得意。
+                </div>
+                <br />
+                <a href="/blog">ブログへ</a>
+            </div>
         ),
         icon: '👨‍💻'
     },
@@ -36,9 +42,17 @@ const FeatureList = [
         title: '技術スタック',
         description: (
             <>
-                HTML5 / CSS3 / JavaScript / TypeScript<br />
-                React / Vue / Node.js<br />
-                Sass / Less / Bootstrap / jQuery
+                <a href="/docs/frontend/html">HTML5</a> /
+                <a href="/docs/frontend/css">CSS3</a><br />
+                <a href="/docs/frontend/javascript">JavaScript</a> /
+                <a href="/docs/frontend/typescript">TypeScript</a><br />
+                <a href="/docs/frontend/react">React</a> /
+                <a href="/docs/frontend/vue">Vue</a> /
+                <a href="/docs/backend/go">Golang</a><br />
+                <a href="/docs/devops/linux">Linux</a> /
+                <a href="/docs/devops/git">Git</a> /
+                <a href="/docs/devops/open-api">OpenAPI</a> /
+                <a href="/docs/devops/powershell">Powershell</a>
             </>
         ),
         icon: '🛠️'
@@ -49,7 +63,9 @@ const FeatureList = [
             <>
                 UI/UXの最適化<br />
                 パフォーマンスチューニング<br />
-                最新技術のキャッチアップ
+                最新技術のキャッチアップ<br />
+                <br />
+                私の<a href="/docs/intro">📚 技術ライブラリー</a>
             </>
         ),
         icon: '🎯'

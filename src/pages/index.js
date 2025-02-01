@@ -108,7 +108,7 @@ function HomepageHeader () {
 
                     <div className={ styles.buttons }>
                         <Link className={ styles.ctaButton } to="/docs/intro">
-                            📚 私のライブラリー
+                            📚 私の技術ライブラリー
                         </Link>
                     </div>
                 </div>
