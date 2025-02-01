@@ -1,9 +1,0 @@
-{
-    "label": "E2Eテスト",
-    "position": 1,
-    "link": {
-        "type": "generated-index",
-        "description": "E2Eテストの技術スタック",
-        "slug": "/testing/e2e-testing"
-    }
-}

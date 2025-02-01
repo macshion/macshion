@@ -1,0 +1,86 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.defaultSidebar.category.フロントエンド": {
+    "message": "フロントエンド",
+    "description": "The label for category フロントエンド in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.フロントエンド.link.generated-index.description": {
+    "message": "フロントエンドの技術スタック",
+    "description": "The generated-index page description for category フロントエンド in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.CSS": {
+    "message": "CSS",
+    "description": "The label for category CSS in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.React": {
+    "message": "React",
+    "description": "The label for category React in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.バックエンド": {
+    "message": "バックエンド",
+    "description": "The label for category バックエンド in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.バックエンド.link.generated-index.description": {
+    "message": "バックエンドの技術スタック",
+    "description": "The generated-index page description for category バックエンド in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Go言語（Golang）": {
+    "message": "Go言語（Golang）",
+    "description": "The label for category Go言語（Golang） in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.データーベース": {
+    "message": "データーベース",
+    "description": "The label for category データーベース in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.データーベース.link.generated-index.description": {
+    "message": "データーベースの技術スタック",
+    "description": "The generated-index page description for category データーベース in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.MySQL": {
+    "message": "MySQL",
+    "description": "The label for category MySQL in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.MySQL.link.generated-index.description": {
+    "message": "MySQLの技術スタック",
+    "description": "The generated-index page description for category MySQL in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.インフラ関連": {
+    "message": "インフラ関連",
+    "description": "The label for category インフラ関連 in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.インフラ関連.link.generated-index.description": {
+    "message": "インフラ関連の技術スタック",
+    "description": "The generated-index page description for category インフラ関連 in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Git": {
+    "message": "Git",
+    "description": "The label for category Git in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Git.link.generated-index.description": {
+    "message": "Gitの技術スタック",
+    "description": "The generated-index page description for category Git in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Linux": {
+    "message": "Linux",
+    "description": "The label for category Linux in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Linux.link.generated-index.description": {
+    "message": "Linuxの技術スタック",
+    "description": "The generated-index page description for category Linux in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.PowerShell": {
+    "message": "PowerShell",
+    "description": "The label for category PowerShell in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.PowerShell.link.generated-index.description": {
+    "message": "PowerShellの技術スタック",
+    "description": "The generated-index page description for category PowerShell in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.OpenAPI": {
+    "message": "OpenAPI",
+    "description": "The label for category OpenAPI in sidebar defaultSidebar"
+  }
+}

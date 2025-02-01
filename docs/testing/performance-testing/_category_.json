@@ -1,9 +1,0 @@
-{
-    "label": "パフォーマンステスト",
-    "position": 1,
-    "link": {
-        "type": "generated-index",
-        "description": "パフォーマンステストの技術スタック",
-        "slug": "/testing/performance-testing"
-    }
-}

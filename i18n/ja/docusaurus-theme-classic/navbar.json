@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "Macshion",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Macshion's Blog",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.ライブラリー": {
+    "message": "ライブラリー",
+    "description": "Navbar item with label ライブラリー"
+  },
+  "item.label.ブログ": {
+    "message": "ブログ",
+    "description": "Navbar item with label ブログ"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}
