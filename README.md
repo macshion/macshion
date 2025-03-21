@@ -1,6 +1,8 @@
 ### Hi there 👋 I'm a Front-End Engineer😊 
 I am passionate about coding/programming. ❤️
 
+[![wakatime](https://wakatime.com/badge/user/5d7324ee-0f1a-4563-a234-a592d823cacf.svg)](https://wakatime.com/@5d7324ee-0f1a-4563-a234-a592d823cacf)
+
 Visit my blog here: [Macshion's Blog](https://kann.jp)
 
 ## My Tech Stack: 
