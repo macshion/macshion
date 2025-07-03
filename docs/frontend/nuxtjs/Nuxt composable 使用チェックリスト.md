@@ -2,7 +2,7 @@
 id: nuxt-composable-checklist
 title: Nuxt composable 使用チェックリスト
 description: Nuxt 3 / Nitro での composable 使用に関する安全なガイドラインとチェックリストです。
-sidebar_position: 2
+sidebar_position: 20
 ---
 
 # Nuxt 3 / Nitro における安全な composable（`useXxx`）の使用チェックリスト

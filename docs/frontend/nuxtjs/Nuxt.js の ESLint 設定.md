@@ -1,6 +1,6 @@
 ---
 id: nuxt-eslint
-sidebar_position: 1
+sidebar_position: 19
 ---
 
 # Nuxt.js の ESLint 設定
