@@ -21,9 +21,9 @@ sidebar_position: 2
 
 | ❌ パターン                                                            | 原因と対策                                                               |
 | ----------------------------------------------------------------- | ------------------------------------------------------------------- |
-| ❌ composable を **グローバルスコープ** で呼び出している                             | 例：`useRuntimeConfig()` をファイル先頭で実行 → ✘<br>✅ 対策：関数内部で呼び出すようにする。       |
-| ❌ `async function` の中で `await` の後に composable を呼んでいる              | `await` により context が切れることがある。<br>✅ 対策：`runWithContext()` で包む。      |
-| ❌ plugin 外で `useCookie`, `useRoute`, `useNuxtApp` を utils から呼んでいる | composable を util 関数に直接書くのは NG。<br>✅ 対策：`composables/` に分離し、使用側で呼ぶ。 |
+| ❌ composable を **グローバルスコープ** で呼び出している                             | 例：`useRuntimeConfig()` をファイル先頭で実行 → ✘<br/>✅ 対策：関数内部で呼び出すようにする。       |
+| ❌ `async function` の中で `await` の後に composable を呼んでいる              | `await` により context が切れることがある。<br/>✅ 対策：`runWithContext()` で包む。      |
+| ❌ plugin 外で `useCookie`, `useRoute`, `useNuxtApp` を utils から呼んでいる | composable を util 関数に直接書くのは NG。<br/>✅ 対策：`composables/` に分離し、使用側で呼ぶ。 |
 
 ---
 

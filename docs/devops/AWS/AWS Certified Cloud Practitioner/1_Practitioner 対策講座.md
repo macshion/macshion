@@ -1,6 +1,6 @@
 ---
 id: AWS-Cloud-Practitioner-course
-sidebar_position: 2
+sidebar_position: 1
 ---
 # Practitioner 対策講座
 
