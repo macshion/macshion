@@ -1,6 +1,7 @@
 {
   "label": "インフラ関連",
-  "position": 6,
+  "position": 3,
+  "collapsed": false,       
   "link": {
         "type": "generated-index",
         "description": "インフラ関連の技術スタック",

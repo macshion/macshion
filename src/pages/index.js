@@ -1,10 +1,8 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import { useAllDocsData } from '@docusaurus/plugin-content-docs/client';
-import { useBlogPost } from '@docusaurus/theme-common';
 import styles from './index.module.css';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
@@ -108,7 +106,7 @@ function HomepageHeader () {
 
                     <div className={ styles.buttons }>
                         <Link className={ styles.ctaButton } to="/docs/intro">
-                            📚 私の技術ライブラリー
+                            📚 技術スタック
                         </Link>
                     </div>
                 </div>

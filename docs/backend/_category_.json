@@ -1,6 +1,7 @@
 {
   "label": "バックエンド",
-  "position": 3,
+  "position": 4,
+  "collapsed": true,
   "link": {
         "type": "generated-index",
         "description": "バックエンドの技術スタック",

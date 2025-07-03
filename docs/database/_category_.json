@@ -1,6 +1,7 @@
 {
   "label": "データーベース",
-  "position": 4,
+  "position": 6,
+  "collapsed": true,
   "link": {
         "type": "generated-index",
         "description": "データーベースの技術スタック",

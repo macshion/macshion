@@ -76,20 +76,22 @@ const darkCodeTheme = require( 'prism-react-renderer/themes/dracula' );
                     src: 'img/logo.svg',
                 },
                 items: [
+                    { to: '/', label: 'Home', position: 'left' },
                     {
                         type: 'doc',
                         docId: 'intro',
                         position: 'left',
-                        label: 'ライブラリー',
+                        label: '技術スタック',
+                    },
+                    { to: '/docs/frontend', label: 'Frontend', position: 'left' },
+                    { to: '/docs/backend', label: 'Backend', position: 'left' },
+                    { to: '/docs/database', label: 'Database', position: 'left' },
+                    {
+                        to: '/docs/category/aws',
+                        label: 'AWS',
+                        position: 'left',
                     },
                     { to: '/blog', label: 'ブログ', position: 'left' },
-                    // {
-                    //     type: 'doc',
-                    //     docId: 'intro',
-                    //     docsPluginId: 'jp',
-                    //     position: 'left',
-                    //     label: '日本語',
-                    // },
                     {
                         href: 'https://github.com/macshion/macshion',
                         label: 'GitHub',

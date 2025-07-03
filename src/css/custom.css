@@ -129,3 +129,31 @@ ruby:hover rt {
   box-shadow: 0 0 15px rgba(0, 204, 255, 0.3);
   transform: translateY(-2px);
 }
+
+/* Mermaid图表样式 */
+.mermaid-container {
+  text-align: center;
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: var(--ifm-background-color);
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.mermaid-container svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 深色模式下的Mermaid样式 */
+[data-theme='dark'] .mermaid-container {
+  background-color: var(--ifm-background-color);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+/* 确保Mermaid图表在容器中居中 */
+.mermaid-container .mermaid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
