@@ -11,6 +11,7 @@ const TechStackList = [
     { name: 'CSS3', icon: '/img/tech/css3.png', color: '#1572B6', link: '/docs/frontend/css' },
     { name: 'Git', icon: '/img/tech/git.png', color: '#F05032', link: '/docs/devops/git' },
     { name: 'GO', icon: '/img/tech/go.png', color: '#2496ED', link: '/docs/backend/go' },
+    { name: 'NestJS', icon: '/img/tech/nestjs.svg', color: '#2496ED', link: '/docs/backend/NextJS' },
     { name: 'Docker', icon: '/img/tech/docker.png', color: '#2496ED', link: '#' },
     { name: 'Webpack', icon: '/img/tech/webpack.png', color: '#8DD6F9', link: '#' },
     { name: 'VS Code', icon: '/img/tech/vscode.png', color: '#007ACC', link: '#' },
@@ -27,7 +28,7 @@ const FeatureList = [
         title: 'フロントエンド専門家',
         description: (
             <div style={ { textAlign: 'left' } }>
-                ⭐8年以上のWeb開発経験を持つ<br />
+                ⭐10年以上のWeb開発経験を持つ<br />
                 フロントエンドエンジニア。<br />
                 ⭐レスポンシブデザイン、クロスブラウザ対応、パフォーマンス最適化が得意。<a href="/blog">ブログへ</a>
             </div>
@@ -98,7 +99,7 @@ function TechStack () {
                     <div className={ styles.titleUnderline }></div>
                 </h2>
                 <p className={ styles.sectionDescription }>
-                    IT業界において約9年間、多様な分野での大規模システム開発に携わり、特にフロントエンド開発を中心に活動してきました。
+                    IT業界において10年以上、多様な分野での大規模システム開発に携わり、特にフロントエンド開発を中心に活動してきました。
                 </p>
             </div>
             <div className={ styles.techStackGrid }>
