@@ -1,0 +1,10 @@
+{
+  "label": "GO言語（Golang）入門",
+  "position": 1,
+  "collapsed": true,
+  "link": {
+        "type": "generated-index",
+        "description": "GO言語（Golang）入門",
+        "slug": "/backend/golang-starter"
+    }
+}

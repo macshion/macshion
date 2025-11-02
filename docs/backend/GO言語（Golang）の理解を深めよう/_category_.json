@@ -1,0 +1,10 @@
+{
+  "label": "GO言語（Golang）の理解を深めよう",
+  "position": 3,
+  "collapsed": true,
+  "link": {
+        "type": "generated-index",
+        "description": "GO言語（Golang）の理解を深めよう",
+        "slug": "/backend/golang-deep-dive"
+    }
+}

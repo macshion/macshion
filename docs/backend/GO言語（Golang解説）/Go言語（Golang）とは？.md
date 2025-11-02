@@ -1,6 +1,12 @@
 ---
 id: go
-title: Go言語（Golang）
+title: Go言語（Golang）とは？
+description: Go言語の概要、歴史、作者、バージョンの特徴、公式ドキュメント、関連ツールについて解説します。
+tags:
+  - go
+  - golang
+  - プログラミング言語
+  - バックエンド
 sidebar_position: 1
 last_update:
   date: 2024-11-17
