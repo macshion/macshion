@@ -8,7 +8,7 @@ tags:
   - golang
   - プログラミング言語
   - バックエンド
-sidebar_position: 2
+sidebar_position: 1
 last_update:
   date: 2024-11-17
   author: Macshion
