@@ -53,8 +53,9 @@ I always try to keep myself updated with the latest trends in the web world. Som
 Visit my blog here: [Macshion's Blog](https://kann.jp)（Japanese）
 
 ### How to reach me
-- Email: kannzuitei@gmail.com
-- WeChat: furiflow
+- Email: `kannzuitei@gmail.com`
+- Line： https://line.me/ti/p/6UweaTx_tC
+- WeChat: furiflow (大姐姐小姐姐)
 <img src="./static/img/default/wechat.jpg" alt="WeChat QR Code" width="250"/>
 
 
