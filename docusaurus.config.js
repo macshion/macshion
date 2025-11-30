@@ -93,6 +93,11 @@ const darkCodeTheme = require( 'prism-react-renderer/themes/dracula' );
                     },
                     { to: '/blog', label: 'ブログ', position: 'left' },
                     {
+                        href: '/reach-me',
+                        label: 'Contact Me',
+                        position: 'right',
+                    },
+                    {
                         href: 'https://github.com/macshion/macshion',
                         label: 'GitHub',
                         position: 'right',
@@ -109,36 +114,20 @@ const darkCodeTheme = require( 'prism-react-renderer/themes/dracula' );
                                 label: "Engineer's Library",
                                 to: '/docs/intro',
                             },
+                            {
+                                label: 'My Blog',
+                                to: '/blog',
+                            },
                         ],
                     },
-                    // {
-                    //     title: 'Community',
-                    //     items: [
-                    //         {
-                    //             label: 'Stack Overflow',
-                    //             href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-                    //         },
-                    //         {
-                    //             label: 'Discord',
-                    //             href: 'https://discordapp.com/invite/docusaurus',
-                    //         },
-                    //         {
-                    //             label: 'Twitter',
-                    //             href: 'https://twitter.com/docusaurus',
-                    //         },
-                    //     ],
-                    // },
                     {
                         title: 'More',
                         items: [
-                            {
-                                label: 'Blog',
-                                to: '/blog',
-                            },
+                            { label: 'Reach Me', to: '/reach-me' },
                             {
                                 label: 'GitHub',
                                 href: 'https://github.com/macshion/macshion',
-                            },
+                            },  
                         ],
                     },
                 ],
