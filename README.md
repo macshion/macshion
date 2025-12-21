@@ -10,6 +10,8 @@ I am passionate about coding/programming. ❤️
 
 Vue/Nuxtを中心としたフロントエンド開発に加え、パフォーマンス改善やリファクタリング、UI/UXの最適化に取り組んでいます。
 
+ブログ（日本語）: [kann.jp](https://kann.jp)
+
 ---
 
 
@@ -50,7 +52,7 @@ Vue/Nuxtを中心としたフロントエンド開発に加え、パフォーマ
 
 I always try to keep myself updated with the latest trends in the web world. Sometimes I write technical things ✍️
 
-Visit my blog here: [Macshion's Blog](https://kann.jp)（Japanese）
+Visit my blog here: [Macshion's Blog](https://macshion.cn)
 
 ### How to reach me
 - Email: `kannzuitei@gmail.com`
