@@ -52,6 +52,13 @@ const darkCodeTheme = require( 'prism-react-renderer/themes/dracula' );
             } ),
         ],
     ],
+    scripts: [
+        {
+            src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6919056769631896',
+            async: true,
+            crossorigin: 'anonymous',
+        },
+    ],
     // plugins: [
     //     [
     //         '@docusaurus/plugin-content-docs',
@@ -127,7 +134,7 @@ const darkCodeTheme = require( 'prism-react-renderer/themes/dracula' );
                             {
                                 label: 'GitHub',
                                 href: 'https://github.com/macshion/macshion',
-                            },  
+                            },
                         ],
                     },
                 ],
@@ -137,7 +144,10 @@ const darkCodeTheme = require( 'prism-react-renderer/themes/dracula' );
                 theme: lightCodeTheme,
                 darkTheme: darkCodeTheme,
             },
-            metadata: [ { name: 'lastUpdated', content: 'true' } ],
+            metadata: [
+                { name: 'lastUpdated', content: 'true' },
+                { name: 'google-adsense-account', content: 'ca-pub-6919056769631896' },
+            ],
             colorMode: {
                 defaultMode: 'dark',
                 disableSwitch: false,
